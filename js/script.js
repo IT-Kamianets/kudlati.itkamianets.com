@@ -68,8 +68,8 @@ if(form){
     const pet = data.get('pet')||'';
     const when = data.get('when')||'';
     const notes = data.get('notes')||'';
-    const msg = `Запис на грумінг%0AІм'я: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AПитомeць: ${encodeURIComponent(pet)}%0AДата/час: ${encodeURIComponent(when)}%0AКоментар: ${encodeURIComponent(notes)}`;
-    const wa = `https://wa.me/380994342098?text=${encodeURIComponent(`Запис на грумінг\nІм'я: ${name}\nТелефон: ${phone}\nПитомeць: ${pet}\nДата/час: ${when}\nКоментар: ${notes}`)}`;
+    const msg = `Запис на грумінг%0AІм'я: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AУлюбленець: ${encodeURIComponent(pet)}%0AДата/час: ${encodeURIComponent(when)}%0AКоментар: ${encodeURIComponent(notes)}`;
+    const wa = `https://wa.me/380994342098?text=${encodeURIComponent(`Запис на грумінг\nІм'я: ${name}\nТелефон: ${phone}\nУлюбленець: ${pet}\nДата/час: ${when}\nКоментар: ${notes}`)}`;
     window.open(wa, '_blank');
   });
 }
