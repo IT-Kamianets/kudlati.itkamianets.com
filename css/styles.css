@@ -80,11 +80,16 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 /* Fix mobile alignment: center content and prevent horizontal shift */
 @media (max-width:600px) {
   html, body { overflow-x: hidden; }
-  .container { text-align: center; }
   .nav { flex-direction: column; align-items: center; }
   .nav .actions { margin-top: 8px; }
-  .booking-form, .cards, .contact-cards, .review-list { text-align: left; }
+  /* center major blocks and headings on small screens */
+  .section, .site-footer, .hero-text { text-align: center; }
+  .section h2 { margin-left: auto; margin-right: auto; }
+  .cards, .contact-cards, .review-list { justify-content: center; }
+  /* keep form fields and card text left-aligned for readability */
+  .booking-form, .cards .card, .contact-card, .review { text-align: left; }
 }
+
 
 
 /* Smooth appearance */
